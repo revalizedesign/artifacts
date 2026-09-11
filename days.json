@@ -1,0 +1,137 @@
+[
+  {
+    "date": "2026-09-11",
+    "items": [
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 6
+      }
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "items": [
+      {
+        "artifact": "AI Seller, Uncropped",
+        "focus": "Mitigate dead space",
+        "project": "C1C AI Seller",
+        "url": "https://claude.ai/code/artifact/c6d41cfe-7ad5-4886-94c9-789311ab4774",
+        "version": 1
+      },
+      {
+        "artifact": "AI Seller, Uncropped",
+        "focus": "Mitigate dead space",
+        "project": "C1C AI Seller",
+        "url": "https://claude.ai/code/artifact/c6d41cfe-7ad5-4886-94c9-789311ab4774",
+        "version": 2
+      }
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "items": [
+      {
+        "focus": "Jonathan & Matt’s collaboration",
+        "project": "Intelliquip Select",
+        "type": "vercel",
+        "url": "https://iqselect.vercel.app",
+        "version": 2
+      }
+    ]
+  },
+  {
+    "date": "2026-09-08",
+    "items": [
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 2
+      },
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 3
+      },
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 4
+      },
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 5
+      },
+      {
+        "artifact": "Pump Selection, Annotated",
+        "focus": "Redesign quick selector",
+        "project": "Intelliquip Select",
+        "url": "https://claude.ai/code/artifact/364a6241-c12a-4e24-a595-12b331593f2c",
+        "version": 1
+      },
+      {
+        "artifact": "Pump Selection, Annotated",
+        "focus": "Redesign quick selector",
+        "project": "Intelliquip Select",
+        "url": "https://claude.ai/code/artifact/364a6241-c12a-4e24-a595-12b331593f2c",
+        "version": 2
+      }
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "items": [
+      {
+        "focus": "Jonathan’s new version",
+        "project": "Intelliquip Select",
+        "type": "vercel",
+        "url": "https://iqselect.vercel.app",
+        "version": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "items": [
+      {
+        "artifact": "Products, Rebuilt",
+        "focus": "Consolidate products & categories",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e",
+        "version": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "items": [
+      {
+        "artifact": "Inputs to Commit",
+        "project": "C1C Model Builder",
+        "url": "https://claude.ai/code/artifact/334fc9ae-31fb-46e4-957e-63649f25173a",
+        "version": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "items": [
+      {
+        "artifact": "AI Seller Density Fixes",
+        "project": "C1C AI Seller",
+        "url": "https://claude.ai/code/artifact/7543b48f-9747-4e0a-ab8f-3968aa60e312"
+      }
+    ]
+  }
+]

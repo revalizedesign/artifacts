@@ -1,0 +1,77 @@
+[
+  {
+    "links": [
+      {
+        "type": "artifact",
+        "updated": "2026-09-11",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e"
+      },
+      {
+        "type": "prototype",
+        "updated": "2026-06-05",
+        "url": "https://revalize.design/c1c-admin"
+      }
+    ],
+    "name": "C1C Model Builder",
+    "status": "green",
+    "summary": "Products list and filter updates shared with Brandon. Design is handed off to development. Next week reacts to pilot feedback."
+  },
+  {
+    "links": [
+      {
+        "type": "artifact",
+        "updated": "2026-09-10",
+        "url": "https://claude.ai/code/artifact/c6d41cfe-7ad5-4886-94c9-789311ab4774"
+      }
+    ],
+    "name": "C1C AI Seller",
+    "status": "green",
+    "summary": "Kiana did a major round of revisions incorporating ideas from the design artifact, with tighter use of space and imagery. Action scope needs testing."
+  },
+  {
+    "links": [
+      {
+        "type": "vercel",
+        "updated": "2026-09-09",
+        "url": "https://iqselect.vercel.app"
+      },
+      {
+        "type": "artifact",
+        "updated": "2026-09-08",
+        "url": "https://claude.ai/code/artifact/364a6241-c12a-4e24-a595-12b331593f2c"
+      },
+      {
+        "type": "figma",
+        "url": "https://wad-snare-21030635.figma.site"
+      }
+    ],
+    "name": "Intelliquip Select",
+    "status": "green",
+    "summary": "Doug approved the concept Jonathan & I proposed Wednesday. Now in development w/ September delivery goal. Later: one page technical view.",
+    "updated": "2026-09-08"
+  },
+  {
+    "links": [],
+    "name": "ACXO",
+    "status": "yellow",
+    "summary": "Ongoing iteration for prompting templates for self-service design review and recommendations. Internal experiment, incomplete.",
+    "updated": "2026-08-31"
+  },
+  {
+    "links": [
+      {
+        "type": "browser",
+        "updated": "2026-08-31",
+        "url": "https://revalize.design/storybook"
+      },
+      {
+        "type": "github",
+        "updated": "2026-08-31",
+        "url": "https://github.com/revalizedesign/storybook"
+      }
+    ],
+    "name": "Storybook",
+    "status": "red",
+    "summary": "No dedicated PM or engineer means this is super slow going. On hiatus due to higher priority work."
+  }
+]
