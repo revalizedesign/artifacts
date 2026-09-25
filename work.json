@@ -14,7 +14,7 @@
     ],
     "name": "C1C Model Builder",
     "status": "green",
-    "summary": "Products list and filter updates shared with Brandon. Design is handed off to development. Next week reacts to pilot feedback."
+    "summary": "Products list and filter updates shared with Brandon. Design handed off to development. Reacting to pilot feedback."
   },
   {
     "links": [
@@ -31,6 +31,11 @@
   {
     "links": [
       {
+        "type": "artifact",
+        "updated": "2026-09-25T15:27",
+        "url": "https://claude.ai/artifact/XjvnwoL5NimMA5UdhEg7rf"
+      },
+      {
         "type": "vercel",
         "updated": "2026-09-09",
         "url": "https://iqselect.vercel.app"
@@ -46,9 +51,20 @@
       }
     ],
     "name": "Intelliquip Select",
-    "status": "green",
-    "summary": "Doug approved the concept Jonathan & I proposed Wednesday. Now in development w/ September delivery goal. Later: one page technical view.",
-    "updated": "2026-09-08"
+    "status": "yellow",
+    "summary": "Approval rescinded. Feature audit found 84% of legacy fields (179/214) missing from prototype. 8 new design patterns needed. Audit artifact documents full field inventory and release plan."
+  },
+  {
+    "links": [
+      {
+        "type": "browser",
+        "updated": "2026-09-03",
+        "url": "https://app-stg.aq-fes.com"
+      }
+    ],
+    "name": "AQ Cloud",
+    "status": "yellow",
+    "summary": "Staging environment available. Needs an up-to-date Claude artifact or Figma asset to iterate on."
   },
   {
     "links": [],
@@ -72,6 +88,6 @@
     ],
     "name": "Storybook",
     "status": "red",
-    "summary": "No dedicated PM or engineer means this is super slow going. On hiatus due to higher priority work."
+    "summary": "No dedicated PM or engineer means this is super slow going. On hiatus due to higher priority design work."
   }
 ]
