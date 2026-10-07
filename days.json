@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-25",
+    "items": [
+      {
+        "artifact": "IQ Select Feature Audit",
+        "focus": "Legacy field inventory & release plan",
+        "project": "IQ Select",
+        "url": "https://claude.ai/artifact/XjvnwoL5NimMA5UdhEg7rf",
+        "version": 1
+      }
+    ]
+  },
+  {
     "date": "2026-09-11",
     "items": [
       {

@@ -17,7 +17,7 @@ const stamp = (parent, d, className, suffix = '') => {
 const ago = d => {
   const m = dayjs().diff(d, 'minute')
   const days = Math.floor(m / 1440)
-  return m < 60 ? `${m}m` : m < 1440 ? `${Math.floor(m / 60)}h` : days <= 30 ? `${days}d` : `${Math.floor(days / 7)}w`
+  return m < 60 ? `${m}m` : m < 1440 ? `${Math.floor(m / 60)}h` : days <= 13 ? `${days}d` : `${Math.floor(days / 7)}w`
 }
 
 const linkTypes = {
@@ -25,6 +25,7 @@ const linkTypes = {
   browser: ['fa-solid fa-browser', 'Website'],
   figma: ['fa-brands fa-figma', 'Figma'],
   github: ['fa-brands fa-github', 'Repo'],
+  prd: ['fa-solid fa-file-lines', 'PRD'],
   prototype: ['fa-brands fa-html5', 'Prototype'],
   vercel: ['fa-solid fa-triangle', 'Vercel'],
 }
@@ -32,22 +33,28 @@ const linkTypes = {
 const latestOf = p => p.links.map(l => l.updated).filter(Boolean).sort().pop() || p.updated || ''
 
 const createProject = p => {
-  const card = add(g('projects'), 'div', 'project')
+  const card = add(g('projects'), 'div', 'project' + (p.inactive ? ' project-inactive' : ''))
   const head = add(card, 'div', 'project-head')
   const title = add(head, 'h2', null, p.name)
   add(title, 'span', `dot dot-${p.status}`)
   stamp(head, latestOf(p), 'project-updated', ' ago')
-  if (p.summary) add(card, 'p', 'project-summary', p.summary)
+  if (p.aka) add(card, 'span', 'project-aka', p.aka)
+  if (p.summary) {
+    const summary = add(card, 'p', 'project-summary')
+    const i = p.summary.indexOf('.')
+    add(summary, 'strong', null, p.summary.slice(0, i + 1))
+    summary.appendChild(document.createTextNode(p.summary.slice(i + 1)))
+  }
   const links = add(card, 'div', 'project-links')
   if (!p.links.length) add(links, 'span', 'project-empty', 'No links, yet.')
   p.links.forEach(link => {
-    const a = add(links, 'a', 'project-link')
-    a.href = link.url
-    a.target = '_blank'
+    const tag = link.url ? 'a' : 'span'
+    const node = add(links, tag, 'project-link' + (link.url ? '' : ' project-link-disabled'))
+    if (link.url) { node.href = link.url }
     const [icon, label] = linkTypes[link.type] || ['fa-solid fa-link', link.type]
-    add(a, 'i', icon)
-    add(a, 'span', null, label)
-    if (link.updated) stamp(a, link.updated, 'link-updated')
+    add(node, 'i', icon)
+    add(node, 'span', null, label)
+    if (link.updated) stamp(node, link.updated, 'link-updated')
   })
 }
 
@@ -60,7 +67,6 @@ const createDay = (parent, d) =>
     add(row, 'span', 'row-version', item.version ? `v${item.version}` : '')
     const a = add(row, 'a', 'row-action')
     a.href = item.url
-    a.target = '_blank'
     const [icon, label] = item.type === 'vercel' ? ['fa-solid fa-triangle', 'View prototype'] : ['fa-brands fa-claude', 'View artifact']
     add(a, 'i', icon)
     add(a, 'span', null, label)
@@ -92,12 +98,16 @@ const renderDays = days => {
   })
 }
 
-g('views').addEventListener('click', e => {
+document.querySelector('header').addEventListener('click', e => {
   const btn = e.target.closest('.view')
   if (!btn) return
   document.querySelectorAll('.view').forEach(b => b.classList.toggle('on', b === btn))
   g('projects').hidden = btn.dataset.view !== 'projects'
   g('days').hidden = btn.dataset.view !== 'days'
+})
+
+g('showInactive').addEventListener('change', e => {
+  g('projects').classList.toggle('show-inactive', e.target.checked)
 })
 
 const load = file => fetch(`./${file}.json`).then(r => r.json())

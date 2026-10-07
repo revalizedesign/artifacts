@@ -1,23 +1,41 @@
 [
   {
     "links": [
-      {
-        "type": "artifact",
-        "updated": "2026-09-11",
-        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e"
-      },
+      {"type": "prd"},
       {
         "type": "prototype",
         "updated": "2026-06-05",
         "url": "https://revalize.design/c1c-admin"
+      },
+      {
+        "type": "artifact",
+        "updated": "2026-09-11",
+        "url": "https://claude.ai/code/artifact/6eff45dd-75c6-45a5-a945-716d4f86e17e"
       }
     ],
+    "aka": "C1 Intelligence: AI Model Builder",
     "name": "C1C Model Builder",
     "status": "green",
-    "summary": "Products list and filter updates shared with Brandon. Design handed off to development. Reacting to pilot feedback."
+    "summary": "Design handed off after product-list updates. Future UX work is driven by pilot feedback, catalog structure decisions, and gaps discovered during customer onboarding."
   },
   {
     "links": [
+      {"type": "prd"},
+      {
+        "type": "figma",
+        "url": "https://ardent-said-18931945.figma.site"
+      }
+    ],
+    "inactive": true,
+    "aka": "AI Logic Builder",
+    "name": "C1C Logic Items",
+    "status": "green",
+    "summary": "Last UX engagement: Q2 2026. Design references and prototype workflows delivered to Luisa Parra. Q1/Q2 scope and release targets defined. Development continued with import/export functionality in progress.",
+    "updated": "2026-07-15"
+  },
+  {
+    "links": [
+      {"type": "prd"},
       {
         "type": "artifact",
         "updated": "2026-09-10",
@@ -26,10 +44,31 @@
     ],
     "name": "C1C AI Seller",
     "status": "green",
-    "summary": "Kiana did a major round of revisions incorporating ideas from the design artifact, with tighter use of space and imagery. Action scope needs testing."
+    "summary": "Last UX engagement: Sep 2026. Kiana incorporated major design revisions. Next UX cycle depends on testing action workflows, user trust in recommendations, and pilot feedback from customer scenarios."
   },
   {
     "links": [
+      {
+        "type": "prd",
+        "url": "prd/iqs-oct6.md"
+      },
+      {
+        "type": "figma",
+        "url": "https://wad-snare-21030635.figma.site"
+      },
+      {
+        "type": "figma",
+        "url": "https://book-sorted-01078054.figma.site"
+      },
+      {
+        "type": "artifact",
+        "updated": "2026-09-08",
+        "url": "https://claude.ai/code/artifact/364a6241-c12a-4e24-a595-12b331593f2c"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/revalize-intelliquip/FIQ-architecture/tree/main/2026-02-28-iq-pump-flo-analysis"
+      },
       {
         "type": "artifact",
         "updated": "2026-09-25T15:27",
@@ -39,42 +78,134 @@
         "type": "vercel",
         "updated": "2026-09-09",
         "url": "https://iqselect.vercel.app"
-      },
-      {
-        "type": "artifact",
-        "updated": "2026-09-08",
-        "url": "https://claude.ai/code/artifact/364a6241-c12a-4e24-a595-12b331593f2c"
-      },
-      {
-        "type": "figma",
-        "url": "https://wad-snare-21030635.figma.site"
       }
     ],
-    "name": "Intelliquip Select",
+    "aka": "Chimera, FIQ, FlowIQ, Fluid Handling Catalog, Intelliquip, IQS, PUMP-FLO",
+    "name": "IQ Select",
     "status": "yellow",
-    "summary": "Approval rescinded. Feature audit found 84% of legacy fields (179/214) missing from prototype. 8 new design patterns needed. Audit artifact documents full field inventory and release plan."
+    "summary": "Last UX engagement: Oct 8, 2026. Jonathan delivers revision updates for the Oct 15 turnkey release target. Future design work depends on parity-gap review and legacy capability planning."
   },
   {
     "links": [
+      {
+        "type": "prd",
+        "url": "prd/aq-cloud.md"
+      },
+      {
+        "type": "figma",
+        "url": "https://onyx-label-16837105.figma.site"
+      },
+      {
+        "type": "figma",
+        "url": "https://depth-emit-12184044.figma.site"
+      },
       {
         "type": "browser",
         "updated": "2026-09-03",
         "url": "https://app-stg.aq-fes.com"
       }
     ],
+    "aka": "AQ, AQ 3.0, AutoQuotes, Medusa",
     "name": "AQ Cloud",
     "status": "yellow",
-    "summary": "Staging environment available. Needs an up-to-date Claude artifact or Figma asset to iterate on."
+    "summary": "Last UX engagement: Sep 3, 2026. Browser-native AutoQuotes replacement focused on catalog, project, and quoting workflows. Future design work depends on roadmap execution and requests from Jessica Boquist."
   },
   {
-    "links": [],
+    "inactive": true,
+    "links": [
+      {
+        "type": "prd",
+        "url": "prd/lai.md"
+      },
+      {
+        "type": "figma",
+        "url": "https://mining-bulb-75056100.figma.site"
+      }
+    ],
+    "aka": "AGI32, Illuminate, Lighting Analysts, Typhoon",
+    "name": "LAI",
+    "status": "green",
+    "summary": "Last UX engagement: Q1 2026. AGi32 Illuminate GA is targeted for Jan 15, 2027, with launch readiness through Nov 30. Future UX work is most likely tied to migration, onboarding, and post-launch feedback.",
+    "updated": "2026-02-23"
+  },
+  {
+    "inactive": true,
+    "links": [
+      {
+        "type": "prd",
+        "url": "prd/attainia.md"
+      }
+    ],
+    "aka": "AI Project Create, Attainia",
+    "name": "Attainia",
+    "status": "green",
+    "summary": "Last UX engagement: Q3 2026. AI-assisted project creation remains active under Naomi’s roadmap. UX involvement resumes when import, matching, and exception-review workflows move beyond concept validation.",
+    "updated": "2026-05-13"
+  },
+  {
+    "inactive": true,
+    "links": [
+      {
+        "type": "prd",
+        "url": "prd/pro-file.md"
+      },
+      {
+        "type": "figma",
+        "url": "https://swell-clone-64851530.figma.site"
+      }
+    ],
+    "aka": "Beeta, PRO.FILE Cloud",
+    "name": "PRO.FILE",
+    "status": "green",
+    "summary": "Last UX engagement: Q1 2026. 10.5 delivery is underway. Future UX involvement is tied to semantic search, web-based ECM, and AI-assisted workflows in the 2026-2027 roadmap.",
+    "updated": "2026-02-23"
+  },
+  {
+    "inactive": true,
+    "links": [
+      {
+        "type": "prd",
+        "url": "prd/pipe-flo.md"
+      }
+    ],
+    "aka": "Flowzilla, Hydra, PIPE-FLO Connect",
+    "name": "PIPE-FLO",
+    "status": "green",
+    "summary": "Last UX engagement: Q1 2026. Connect approaches Oct 30 GA. UX involvement is most likely after launch feedback, desktop migration friction, and AI-assisted modeling workflows surface usability gaps.",
+    "updated": "2026-02-23"
+  },
+  {
+    "inactive": true,
+    "links": [
+      {
+        "type": "prd",
+        "url": "prd/specpage.md"
+      },
+      {
+        "type": "figma",
+        "url": "https://polo-asset-80771830.figma.site"
+      }
+    ],
+    "aka": "SpecPage 2.0, SpecPDM",
+    "name": "SpecPage",
+    "status": "green",
+    "summary": "Last UX engagement: Q1 2026. SpecPage 2.0 launch and migration are underway. Future UX engagement will likely focus on compliance, supplier workflows, migration tooling, and AI-assisted formulation.",
+    "updated": "2026-02-23"
+  },
+  {
+    "inactive": true,
+    "links": [
+      {"type": "prd"}
+    ],
     "name": "ACXO",
     "status": "yellow",
-    "summary": "Ongoing iteration for prompting templates for self-service design review and recommendations. Internal experiment, incomplete.",
+    "summary": "Last UX engagement: Aug 2026. Ongoing iteration for prompting templates for self-service design review and recommendations. Internal experiment, incomplete.",
     "updated": "2026-08-31"
   },
   {
+    "inactive": true,
     "links": [
+      {"type": "prd"},
       {
         "type": "browser",
         "updated": "2026-08-31",
@@ -88,6 +219,6 @@
     ],
     "name": "Storybook",
     "status": "red",
-    "summary": "No dedicated PM or engineer means this is super slow going. On hiatus due to higher priority design work."
+    "summary": "Last UX engagement: Aug 2026. No dedicated PM or engineer means this is super slow going. On hiatus due to higher priority design work."
   }
 ]
