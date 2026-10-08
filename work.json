@@ -3,6 +3,19 @@
     "links": [
       {"type": "prd"},
       {
+        "type": "artifact",
+        "updated": "2026-10-08",
+        "url": "https://claude.ai/artifact/EinQ52nXSb7V3Drb8EQHZX"
+      }
+    ],
+    "name": "In-App Support",
+    "status": "yellow",
+    "summary": "Last UX engagement: Oct 8, 2026. Visual summary created from product team alignment meeting. Amending with existing navigation references and design recommendations before distributing to stakeholders."
+  },
+  {
+    "links": [
+      {"type": "prd"},
+      {
         "type": "prototype",
         "updated": "2026-06-05",
         "url": "https://revalize.design/c1c-admin"
@@ -76,7 +89,7 @@
       },
       {
         "type": "vercel",
-        "updated": "2026-09-09",
+        "updated": "2026-10-08",
         "url": "https://iqselect.vercel.app"
       }
     ],

@@ -73,7 +73,8 @@ const createDay = (parent, d) =>
   })
 
 const renderDays = days => {
-  add(g('days'), 'div', 'sort', 'Newest')
+  const c = g('days')
+  add(c, 'div', 'sort', 'Newest')
   const weeks = new Map()
   days.forEach(d => {
     const w = dayjs(d.date).format('YY') + String(dayjs(d.date).isoWeek()).padStart(2, '0')
@@ -87,13 +88,10 @@ const renderDays = days => {
     months.get(m).set(w, ds)
   })
   months.forEach((ws, m) => {
-    const month = add(g('days'), 'div', 'month')
-    add(month, 'h2', null, m)
+    add(c, 'h2', 'month', m)
     ws.forEach((ds, w) => {
-      const week = add(month, 'div', 'week')
-      add(week, 'h3', null, w)
-      const list = add(week, 'div', 'week-days')
-      ds.forEach(d => createDay(list, d))
+      add(c, 'h3', 'week', w)
+      ds.forEach(d => createDay(c, d))
     })
   })
 }
